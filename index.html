@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Mechanical Engineering student portfolio — projects, resume, and contact." />
+  <title>Neil Hasenstaub | Mechanical Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top">NH</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#about">About</a>
+        <a href="#structure">Repo Structure</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">Mechanical Engineering • 3rd Year • Internship-Seeking</p>
+          <h1>Neil Hasenstaub</h1>
+          <p class="subtitle">
+            Hands-on ME student focused on CAD, mechanisms, and mechatronics — building real prototypes,
+            running analysis, and documenting work like an engineer.
+          </p>
+
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="assets/resume/Neil-Resume.pdf" download>Download Resume (PDF)</a>
+          </div>
+
+          <div class="quickFacts">
+            <div class="fact">
+              <div class="fact__k">Tools</div>
+              <div class="fact__v">SolidWorks • MATLAB • Arduino C/C++ • FEA • GD&amp;T</div>
+            </div>
+            <div class="fact">
+              <div class="fact__k">Interests</div>
+              <div class="fact__v">Robotics • Mechanisms • Design-for-Manufacture • Prototyping</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <h2>Featured: Autonomous Vehicle (Capstone)</h2>
+            <p class="muted">
+              3D-printed chassis, 4WD drivetrain, SONAR + IR sensing, and Arduino-based mode control.
+            </p>
+
+            <div class="mediaGrid">
+              <figure class="media">
+                <img src="assets/img/av-01.jpg" alt="Autonomous vehicle prototype photo 1">
+              </figure>
+              <figure class="media">
+                <img src="assets/img/av-02.jpg" alt="Autonomous vehicle prototype photo 2">
+              </figure>
+            </div>
+
+            <div class="videoGrid">
+              <video controls preload="metadata">
+                <source src="assets/video/av-demo-01.mov" type="video/quicktime" />
+                Your browser does not support the video tag.
+              </video>
+              <video controls preload="metadata">
+                <source src="assets/video/av-demo-02.mov" type="video/quicktime" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="card__actions">
+              <a class="btn btn--small" href="assets/docs/Autonomous-Vehicle-Design.pdf" target="_blank" rel="noopener">
+                View PDF
+              </a>
+              <a class="btn btn--small btn--ghost" href="#contact">Request full build notes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Portfolio</h2>
+          <p class="muted">Recruiter-friendly summaries: outcomes, tools, and what I owned.</p>
+        </div>
+
+        <div class="grid">
+          <!-- 1) Autonomous Vehicle -->
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Autonomous Vehicle Design</h3>
+              <p class="proj__meta">CAT Robotics Capstone</p>
+            </div>
+
+            <ul class="bullets">
+              <li>Designed and 3D-printed a modular chassis (steering components + airless tires) to support rapid iteration.</li>
+              <li>Built a differential housing and modular drivetrain enabling 4WD + independent suspension packaging.</li>
+              <li>Integrated SONAR + IR sensing to achieve obstacle avoidance and line-following behaviors.</li>
+              <li>Programmed Arduino C/C++ mode selection via PPM control with live LCD status feedback.</li>
+            </ul>
+
+            <div class="tags">
+              <span>SolidWorks</span><span>3D Printing</span><span>Arduino C/C++</span><span>Sensors</span><span>Systems Integration</span>
+            </div>
+
+            <div class="proj__actions">
+              <a class="btn btn--small" href="assets/docs/Autonomous-Vehicle-Design.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="btn btn--small btn--ghost" href="#" title="Add your GitHub project link here">Project Link</a>
+            </div>
+          </article>
+
+          <!-- 2) Stirling Engine -->
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Stirling Engine Design &amp; Analysis</h3>
+              <p class="proj__meta">Engineering Thermodynamics</p>
+            </div>
+
+            <ul class="bullets">
+              <li>Evaluated Stirling architectures and selected an alpha configuration to balance performance and manufacturability.</li>
+              <li>Modeled a two-cylinder assembly in SolidWorks and validated fit/clearances before fabrication.</li>
+              <li>Ran thermodynamic calculations to tune displacement/volume targets for design intent.</li>
+              <li>Fabricated components via 3D printing and assembled the mechanism to verify motion and integration.</li>
+            </ul>
+
+            <div class="tags">
+              <span>Thermo</span><span>SolidWorks</span><span>3D Printing</span><span>Design Validation</span>
+            </div>
+
+            <div class="proj__actions">
+              <a class="btn btn--small" href="assets/docs/Stirling-Engine-Main-Assembly.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="btn btn--small btn--ghost" href="#" title="Add your GitHub project link here">Project Link</a>
+            </div>
+          </article>
+
+          <!-- 3) Four-Link -->
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Four-Link Mechanism Analysis</h3>
+              <p class="proj__meta">Kinematics &amp; Dynamics of Machinery</p>
+            </div>
+
+            <ul class="bullets">
+              <li>Compared multiple four-bar configurations to meet a constrained motion/packaging problem.</li>
+              <li>Generated link dimensions using dimensional synthesis and verified kinematic behavior across positions.</li>
+              <li>Modeled the mechanism in CAD and documented an exploded view + component drawings.</li>
+              <li>Performed simulation/analysis workflow to understand loading behavior and stress risk areas.</li>
+            </ul>
+
+            <div class="tags">
+              <span>Mechanisms</span><span>Dimensional Synthesis</span><span>MATLAB</span><span>SolidWorks</span><span>FEA</span>
+            </div>
+
+            <div class="proj__actions">
+              <a class="btn btn--small" href="assets/docs/Four-Link-Mechanism-Analysis.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="btn btn--small btn--ghost" href="#" title="Add your GitHub project link here">Project Link</a>
+            </div>
+          </article>
+
+          <!-- 4) Catapult -->
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Catapult (Ballista) Design &amp; Testing</h3>
+              <p class="proj__meta">Mechanical Engineering Skills &amp; Design 2</p>
+            </div>
+
+            <ul class="bullets">
+              <li>Benchmarked projectile launching mechanisms, comparing complexity, cost, and repeatability.</li>
+              <li>Used kinematics to select a launch geometry based on target range constraints.</li>
+              <li>Built a ballista-style prototype using a welded frame + 3D-printed bucket/fixtures.</li>
+              <li>Produced assembly drawings with GD&amp;T callouts and a documented BOM for repeatable builds.</li>
+            </ul>
+
+            <div class="tags">
+              <span>Kinematics</span><span>Welding</span><span>3D Printing</span><span>GD&amp;T</span><span>Documentation</span>
+            </div>
+
+            <div class="proj__actions">
+              <a class="btn btn--small" href="assets/docs/Catapult-Design-Assembly.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="btn btn--small btn--ghost" href="#" title="Add your GitHub project link here">Project Link</a>
+            </div>
+          </article>
+
+          <!-- 5) Bridge -->
+          <article class="proj">
+            <div class="proj__top">
+              <h3>Grant Rd Truss Bridge — Design, Report &amp; Testing</h3>
+              <p class="proj__meta">EGN2001C</p>
+            </div>
+
+            <ul class="bullets">
+              <li>Designed and built a truss bridge to meet a 5 kg requirement; tested to failure at ~9.5 kg.</li>
+              <li>Used a quality-first build process (member straightness, joint consistency, gusset alignment) to improve performance.</li>
+              <li>Documented failure mode observations (member fracture → chord shear → global separation) from high-speed review.</li>
+              <li>Produced a structured report connecting design choices to measured performance and next-iteration improvements.</li>
+            </ul>
+
+            <div class="tags">
+              <span>Structures</span><span>Trusses</span><span>Testing</span><span>Failure Analysis</span><span>Reporting</span>
+            </div>
+
+            <div class="proj__actions">
+              <a class="btn btn--small" href="assets/docs/Grant-Rd-Truss-Bridge-Report.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="btn btn--small btn--ghost" href="#" title="Add your GitHub project link here">Project Link</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section section--alt">
+      <div class="container split">
+        <div>
+          <h2>Resume</h2>
+          <p class="muted">
+            One-page PDF for quick review. If you’d like, I can add a “skills snapshot” version for recruiters.
+          </p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="assets/resume/Neil-Resume.pdf" download>Download Resume</a>
+            <a class="btn btn--ghost" href="assets/resume/Neil-Resume.pdf" target="_blank" rel="noopener">Open in New Tab</a>
+          </div>
+        </div>
+        <div class="card card--soft">
+          <h3>What I’m targeting</h3>
+          <ul class="bullets">
+            <li>Mechanical Engineering Internship (Design / Manufacturing / Mechatronics)</li>
+            <li>Hands-on prototyping + CAD + analysis + documentation</li>
+            <li>Teams building real hardware</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I’m a third-year Mechanical Engineering student focused on turning ideas into working hardware —
+            combining CAD, analysis, and prototyping to iterate fast and document clearly.
+          </p>
+
+          <h3 class="miniHead">Interests</h3>
+          <ul class="bullets">
+            <li>Avid musician — guitar and drums in rock bands; comfortable collaborating and rehearsing toward a tight result.</li>
+            <li>LEGO Technic vehicles — design + refinement mindset (mechanisms, packaging, iteration).</li>
+            <li>Ice hockey and baseball — strategy, systems, and performance under pressure.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>LinkedIn</h3>
+          <p class="muted">Scan to view my profile.</p>
+          <div class="qrWrap">
+            <img src="assets/img/linkedin-qr.png" alt="LinkedIn QR code" />
+          </div>
+          <p class="muted small">
+            Replace <code>assets/img/linkedin-qr.png</code> with your actual QR image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPO STRUCTURE -->
+    <section id="structure" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>GitHub Repo Structure (General)</h2>
+          <p class="muted">A clean layout recruiters can navigate in 10 seconds.</p>
+        </div>
+
+        <div class="card">
+          <pre class="pre">
+/ (root)
+  index.html            → main landing page
+  README.md             → quick intro + links + how to run
+  assets/
+    resume/             → your resume PDF
+    docs/               → project PDFs (reports, drawings)
+    img/                → photos, diagrams, QR codes
+    video/              → demos (short clips)
+    css/                → styles
+    js/                 → scripts
+          </pre>
+
+          <div class="divider"></div>
+
+          <ul class="bullets">
+            <li><b>Keep PDFs in /assets/docs</b> so links never break.</li>
+            <li><b>Use consistent filenames</b> (kebab-case) for easy sharing.</li>
+            <li><b>Pin this repo</b> on your GitHub profile once published.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container split">
+        <div>
+          <h2>Contact</h2>
+          <p class="muted">Fastest way to reach me:</p>
+          <div class="contactList">
+            <a href="mailto:nfh5366@gmail.com">nfh5366@gmail.com</a>
+            <span class="dot">•</span>
+            <a href="https://neilh9056.github.io" target="_blank" rel="noopener">neilh9056.github.io</a>
+          </div>
+          <p class="small muted">
+            Tip: if you want a custom domain later, add <code>CNAME</code> and point DNS to GitHub Pages.
+          </p>
+        </div>
+
+        <div class="card card--soft">
+          <h3>Recruiter note</h3>
+          <p class="muted">
+            I’m happy to share CAD files, simulations, or a 1–2 minute project walkthrough video upon request.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Neil Hasenstaub</span>
+        <span class="muted">Built for GitHub Pages</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
