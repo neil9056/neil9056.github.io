@@ -380,32 +380,3 @@ h1{
   gap: 10px;
   color: rgba(255,255,255,0.70);
 }
-.project-feedback {
-  display: flex;
-  background: #f6f8fb;
-  border-radius: 8px;
-  margin: 18px 0;
-  overflow: hidden;
-}
-
-.feedback-bar {
-  width: 4px;
-  background: linear-gradient(to bottom, #1a4cff, #6c8cff);
-}
-
-.feedback-content {
-  padding: 14px 18px;
-}
-
-.feedback-quote {
-  font-style: italic;
-  margin: 0 0 6px 0;
-  color: #1e1e1e;
-}
-
-.feedback-author {
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin: 0;
-}
-
