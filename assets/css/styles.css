@@ -380,3 +380,49 @@ h1{
   gap: 10px;
   color: rgba(255,255,255,0.70);
 }
+/* Four-Link: Aerospace hook */
+.proj__hook{
+  margin: 8px 0 0;
+  color: rgba(255,255,255,0.72);
+  font-size: 0.95rem;
+}
+
+/* Instructor Recognition badge */
+.recognition-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(176,149,222,0.28);
+  background: rgba(176,149,222,0.10);
+  color: rgba(255,255,255,0.86);
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.badge-icon svg{
+  display: block;
+  fill: rgba(176,149,222,0.95);
+}
+
+/* Professor Feedback */
+.prof-feedback{
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(176,149,222,0.22);
+  background: rgba(176,149,222,0.08);
+}
+
+.prof-feedback .quote{
+  margin: 0 0 6px 0;
+  font-style: italic;
+  color: rgba(255,255,255,0.92);
+}
+
+.prof-feedback .quote-author{
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.70);
+}
