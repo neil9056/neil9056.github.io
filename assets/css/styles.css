@@ -49,21 +49,16 @@ a:hover{ opacity: 0.92; }
   align-items:center;
   justify-content:space-between;
 }
+
 .brand{
-  width: 44px;
-  height: 44px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  display:grid;
+  place-items:center;
+  border-radius: 12px;
+  font-weight: 800;
   background: linear-gradient(135deg, rgba(80,29,131,0.95), rgba(176,149,222,0.85));
   box-shadow: 0 10px 25px rgba(80,29,131,0.25);
-}
-.brand img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
 }
 
 .nav{
@@ -385,5 +380,33 @@ h1{
   gap: 10px;
   color: rgba(255,255,255,0.70);
 }
+/* Instructor Feedback Styling */
 
+.project-feedback {
+  display: flex;
+  background: #f6f8fb;
+  border-radius: 8px;
+  margin: 18px 0;
+  overflow: hidden;
+}
 
+.feedback-bar {
+  width: 4px;
+  background: linear-gradient(to bottom, #1a4cff, #6c8cff);
+}
+
+.feedback-content {
+  padding: 14px 18px;
+}
+
+.feedback-quote {
+  font-style: italic;
+  margin: 0 0 6px 0;
+  color: #1e1e1e;
+}
+
+.feedback-author {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
